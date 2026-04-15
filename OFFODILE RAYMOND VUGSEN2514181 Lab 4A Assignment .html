@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC FORM ASSIGNMENT</title>
+    <style>
+        div{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+   <form>
+        <div>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname">
+        </div>
+
+        <div>
+        <label for="matriculationnumber">Matriculation Number:</label>
+        <input type="text" id="matriculationnumber" name="matriculationnumber">
+        </div>
+
+        <div>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        </div>
+
+        <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+        </div>
+
+        <div>
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <p>Select available documents:</p>
+            <input type="checkbox" id="veritasuniversityadmissionletter" name="selectavailabledocuments" value="veritasuniversityadmissionletter">
+            <label for="veritasuniversityadmissionletter">Veritas University Admission Letter</label>
+            <input type="checkbox" id="jambadmissionletter" name="selectavailabledocuments" value="jambadmissionletter">
+            <label for="jambadmissionletter">JAMB Admission Letter</label>
+            <input type="checkbox" id="paymentreceipt" name="selectavailabledocuments" value="paymentreceipt">
+            <label for="paymentreciept">Payment Receipt</label>
+            <input type="checkbox" id="passport" name="selectavailabledocuments" value="passport">
+            <label for="passport">Passport</label>
+        </div>
+
+        <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        </div>
+
+        <div>
+        <label for="passport">Upload Passport:</label>
+        <input type="file" id="passport" name="passport">
+        </div>
+
+        <div>
+            <label for="faculty">Faculty:</label>
+            <select id="faculty" name="faculty">
+                <option value="science">Science</option>
+                <option value="arts">Arts</option>
+                <option value="managementsciences">Management Sciences</option>
+            </select>
+        </div>
+
+        <div>
+        <label for="message">Additional Information:</label>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea>
+        </div>
+    </form> 
+</body>
+</html>
