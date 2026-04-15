@@ -12,35 +12,40 @@
 </head>
 <body>
    <form>
-        <div>
-        <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname">
-        </div>
+        <fieldset>
+           <legend>Student Orientation Registration</legend>
 
-        <div>
-        <label for="matriculationnumber">Matriculation Number:</label>
-        <input type="text" id="matriculationnumber" name="matriculationnumber">
-        </div>
+           <form action="/submit" method="post">
+           <input type="text" name="fullname" placeholder="Enter your full name" required>
+           </form>
+           <label for="fullname">Full Name:</label>
+           <input type="text" id="fullname" name="fullname">
+           
 
-        <div>
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email">
-        </div>
+           
+           <label for="matriculationnumber">Matriculation Number:</label>
+           <input type="text" id="matriculationnumber" name="matriculationnumber">
+           
 
-        <div>
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age">
-        </div>
+           
+           <label for="email">Email:</label>
+           <input type="text" id="email" name="email">
+           
 
-        <div>
+           
+           <label for="age">Age:</label>
+           <input type="number" id="age" name="age">
+           
+
+           
             <p>Gender:</p>
             <input type="radio" id="male" name="gender" value="Male">
             <label for="male">Male</label>
             <input type="radio" id="female" name="gender" value="Female">
             <label for="female">Female</label>
-        </div>
+            
 
-        <div>
+            
             <p>Select available documents:</p>
             <input type="checkbox" id="veritasuniversityadmissionletter" name="selectavailabledocuments" value="veritasuniversityadmissionletter">
             <label for="veritasuniversityadmissionletter">Veritas University Admission Letter</label>
@@ -50,31 +55,34 @@
             <label for="paymentreciept">Payment Receipt</label>
             <input type="checkbox" id="passport" name="selectavailabledocuments" value="passport">
             <label for="passport">Passport</label>
-        </div>
+            
 
-        <div>
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob">
-        </div>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+            
 
-        <div>
-        <label for="passport">Upload Passport:</label>
-        <input type="file" id="passport" name="passport">
-        </div>
+            <label for="passport">Upload Passport:</label>
+            <input type="file" id="passport" name="passport">
 
-        <div>
+
+
+            
             <label for="faculty">Faculty:</label>
             <select id="faculty" name="faculty">
                 <option value="science">Science</option>
                 <option value="arts">Arts</option>
                 <option value="managementsciences">Management Sciences</option>
             </select>
-        </div>
 
-        <div>
-        <label for="message">Additional Information:</label>
-        <textarea id="message" name="message" rows="4" cols="30"></textarea>
-        </div>
+
+            <label for="message">Additional Information:</label>
+            <textarea id="message" name="message" rows="4" cols="30"></textarea>
+            
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
     </form> 
+    
 </body>
 </html>
